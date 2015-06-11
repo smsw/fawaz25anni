@@ -1,0 +1,1 @@
+<?php dynamic_sidebar('sub_nav_menu_footer');

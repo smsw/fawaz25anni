@@ -1,0 +1,36 @@
+{
+  "name": "bxslider-4",
+  "version": "4.2.0",
+  "homepage": "http://bxslider.com",
+  "license": "MIT",
+  "main": [
+    "dist/jquery.bxslider.js",
+    "dist/jquery.bxslider.css",
+    "dist/images/bx_loader.gif",
+    "dist/images/controls.png"
+  ],
+  "keywords": [
+    "bxslider",
+    "javascript",
+    "jquery",
+    "library"
+  ],
+  "ignore": [
+    "src/**/*.*",
+    "docs/**/.*",
+    "*.md"
+  ],
+  "dependencies": {
+    "jquery": ">=1.6"
+  },
+  "_release": "4.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v4.2.0",
+    "commit": "6bf60a2a47a4d0f41353751dcb94d24b9a230eb0"
+  },
+  "_source": "git://github.com/wandoledzep/bxslider-4.git",
+  "_target": "~4.2.0",
+  "_originalSource": "bxslider-4",
+  "_direct": true
+}

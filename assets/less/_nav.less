@@ -1,0 +1,170 @@
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  background: transparent;
+  border: none;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: darken(@header-footer-background-color, 5%);
+  color: @color-white;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: @color-white;
+}
+
+.dropdown-menu {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-menu .active a {
+  // Because we have main nav items in the sub menu too because of dropdown click.
+  background: none!important;
+}
+
+.navbar .active {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: @color-white;
+  width: 30px;
+  height: 5px;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+  color: @color-white;
+  text-transform: uppercase;
+  font-size: 15px;
+  &:hover{
+    color: @color-white;
+  }
+}
+
+.navbar-toggle {
+  margin-top: 5px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+
+.non-absolute {
+  position: static!important;
+}
+
+ul.sub-menu li a:hover {
+  background: none;
+}
+
+ul.nav.navbar-nav.navbar-right{
+  margin-top: 25px;
+}
+
+.nav .stores {
+  background: none;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background: none!important;
+}
+
+.navbar-default {
+  background-color: @header-footer-background-color;
+  border-color: @header-footer-background-color;
+}
+
+// Alternate navbars
+// --------------------------------------------------
+
+// Default navbar
+.navbar-default {
+  border: none;
+    .navbar-nav .open .dropdown-menu > li > a {
+      color: lighten(@header-footer-background-color, 45%);
+      &:hover, &:active, &:focus {
+        color: lighten(@header-footer-background-color, 65%);
+      }
+    }
+    @media (max-width: @grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+
+        > li > a {
+          .active {
+          background: blue!important;
+        }
+
+          color: @navbar-default-link-color;
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-hover-color;
+              background: rgba(0, 0, 0, 0.15);
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-active-color;
+             background: rgba(0, 0, 0, 0.15);
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-disabled-color;
+            background: rgba(0, 0, 0, 0.15);
+          }
+        }
+      }
+
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: @navbar-default-link-color;
+    &:hover {
+      color: @navbar-default-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: @navbar-default-link-color;
+    &:hover,
+    &:focus {
+      color: @navbar-default-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-disabled-color;
+      }
+    }
+  }
+}
+
+// The MENU text next to the menu icon
+// Location: Homepage
+.menu-text {
+  float: left;
+  position: relative;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 16px;
+  right: 65px;
+}
+

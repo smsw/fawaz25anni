@@ -1,0 +1,841 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "proxima-nova", sans-serif;
+}
+
+.page-blue {
+  background: @brand-primary;
+}
+
+.modal {
+  color: @brand-primary;
+  a { color: @brand-primary; }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "museo-sans", sans-serif;
+  font-weight: 800;
+
+  small {
+    font-style: italic;
+    font-weight: bold;
+    color: @color-white;
+  }
+}
+
+.error404 {
+  main {
+    margin-bottom: 35px;
+  }
+}
+
+.home-intro {
+  h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  p {
+    width: 800px;
+    max-width: 100%;
+  }
+}
+
+.home-brands-slider {
+  margin-bottom: 0;
+}
+
+.home-brand-logos {
+  li {
+    line-height: 2.5;
+    text-align: center;
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+
+.stores,
+.featured-stats,
+.home-brands-hoz-slider,
+.home-employee-total {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// Responsive iFrame
+// Location: Globally
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Location: Homepage
+.featured-stats {
+  p {
+    font-size: 16px;
+    color: @color-text-grey;
+  }
+
+  .circle-stats {
+    text-transform: uppercase;
+    color: @brand-primary;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 35px;
+
+    li {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .circle {
+      background-color: @brand-primary;
+      border-radius: 100%;
+      padding: 50px;
+      width: 50px;
+      margin: 0 auto;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      color: @color-white;
+      margin-top: 4px;
+    }
+    .purple {
+      background-color: @color-main-dark;
+    }
+
+    .stat {
+      margin-top: 5px;
+      color: @color-primary-background;
+    }
+  }
+}
+
+.page-primary {
+  h1 {
+    color: @brand-primary;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+}
+
+// Board of directors/ Senior Management Team
+.meet-the-team {
+  transition: all 1s ease;
+
+  .title {
+    color: mix(@brand-primary, @background-color, 70%);
+    min-height: 40px;
+  }
+
+  .name {
+    border-bottom: 5px solid transparent;
+    h4 {
+      color: @brand-primary;
+      font-size: 24px;
+    }
+    margin-bottom: 25px;
+  }
+
+  .hover {
+    height: 0;
+    opacity: 0;
+  }
+
+  .box {
+    background: transparent;
+    background: @color-white-rgba;
+    margin-bottom: 25%;
+
+    .team-image img {
+      margin: 10px auto;
+      text-align: center;
+      position: relative;
+      padding: 3px;
+      background: @background-color;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    p {
+      padding: 0 15px 15px;
+      text-align: left;
+    }
+
+    &:hover {
+      background: mix(@brand-primary, @background-color, 10%);
+
+      .name {
+        border-bottom: 5px solid mix(@brand-primary, @background-color, 15%);
+        h4, .title {color: darken(@brand-primary, 1%);}
+      }
+    }
+  }
+}
+.directors-row {
+  margin-bottom: 0;
+}
+
+// Location: Global Operations page
+.global-operations {
+  transition: all 1s ease;
+
+  .team-round {
+    border-radius: 50%;
+    background-color: transparent;
+    width: 140px;
+    height: 135px;
+  }
+
+  .name {
+    border-bottom: 5px solid @color-main-dark-3;
+    h4 {
+      font-size: 24px;
+    }
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    font-size: 32px;
+    padding: 15px 0 0;
+  }
+
+  .title {
+    color: #fff !important;
+    min-height: 40px;
+  }
+
+  .hover {
+    height: 0;
+    opacity: 0;
+  }
+
+  .box {
+    background: transparent;
+    background: @color-white-rgba;
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 15px;
+
+    img {
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      bottom: 35px;
+    }
+
+    p {
+      padding: 0 15px 15px;
+      text-align: left;
+    }
+
+    &:hover {
+      .team-round {
+        background: @color-main-dark-3;
+      }
+      background: @color-main-dark-3-rgba;
+    }
+  }
+}
+
+.directors {
+  div.name {
+    h4 {
+      font-size: 18px;
+    }
+  }
+}
+
+.sub-title {
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+.copyright ul {
+  list-style-type: none;
+}
+
+footer {
+  background-color: @header-footer-background-color;
+
+  h5 {
+    font-weight: 500;
+    color: @color-h5;
+  }
+
+  li {
+    color: @color-li;
+    direction: ltr;
+    a {
+      color: @color-li;
+
+      &:hover, &:focus, &:active {
+        color: @color-white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .circle-stats {
+    font-size: 12px;
+
+    h5 {
+      margin: 30px 0 20px;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    ul {
+      margin: 0;
+      li {
+        margin-bottom: 8px;
+      }
+    }
+
+    .circle {
+      background-color: darken(@header-footer-background-color, 10%);
+      border-radius: 100%;
+      padding: 50px;
+      width: 50px;
+      margin: 0 auto;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      color: @color-white;
+      margin-top: 4px;
+    }
+
+    .purple {
+      background-color: darken(@header-footer-background-color, 5%);
+    }
+
+    .stat {
+      margin-top: 5px;
+      color: @color-primary-secondary-background;
+    }
+  }
+
+  section.copyright {
+    margin: 40px 0 40px 0;
+    font-size: 13px;
+    font-weight: 300;
+    color: @color-dark-grey
+  }
+}
+
+// Location: Footer
+.alhokair-partners {
+  padding: 70px 0 40px;
+  background-color: @header-footer-background-color;
+
+  .logos li {
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 12px;
+    font-weight: bold;
+    color: mix(darken(@brand-primary, 6%), @background-color, 50%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px 0 0;
+  }
+
+  a img {
+    transition: opacity .2s ease-in-out;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.brand-listing {
+  margin: 0 auto;
+  width: 80%;
+}
+
+// Location: Brand Portfolio Page
+.brands {
+  background: @color-white;
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .flex-direction-nav {
+    display: none;
+  }
+
+  ul.slides {
+    li {
+      background: @color-white;
+
+      div.logo {
+        background: @color-dark-pink;
+        height: 730px;
+        line-height: 730px;
+
+        img {
+          display: inline;
+          width: auto;
+        }
+      }
+
+      .responsive-container {
+        position: relative;
+        width: 100%;
+      }
+
+      .dummy {
+        padding-top: 60%; /* forces 1:1 aspect ratio */
+      }
+
+      .img-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        text-align: center; /* Align center inline elements */
+      }
+
+      .img-container .centerer {
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+      }
+
+      .img-container img {
+        vertical-align: middle;
+        display: inline-block;
+        max-height: 100%; /* <-- Set maximum height to 100% of its parent */
+        max-width: 100%; /* <-- Set maximum width to 100% of its parent */
+      }
+
+      div.logo-image {
+        padding: 150px 0;
+      }
+
+      div.feature {
+        overflow: hidden;
+
+        img {
+          margin: 0 auto;
+        }
+
+        div.caption {
+          background: @color-white;
+          height: 100%;
+          display: block;
+          padding-top: 30px;
+          padding-right: 15px;
+
+          h2 {
+            color: @color-main-pink;
+            font-size: 35px;
+            font-weight: bold;
+          }
+          p {
+            color: @color-text-grey;
+            font-size: 16px;
+            line-height: 1.9;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Brand Portfolio: Category filters
+.categories_filter {
+  padding: 35px 0 0 !important;
+}
+
+ul.categories_filter {
+  li {
+    padding: 5px 10px;
+    background: darken(@background-color, 8%);
+    border-radius: 2px;
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 11px;
+    font-weight: bold;
+    display: inline-block !important;
+    float: none !important;
+    margin: 2px 0 !important;
+
+    a {
+      color: @brand-primary;
+      text-decoration: none;
+      border: none;
+    }
+
+    &.active, &:hover {
+      background: darken(@background-color, 20%);
+    }
+  }
+}
+
+.forms {
+  /* Default plugin styles */
+  .fm-form li {
+    list-style: none !important;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .fm-form input, textarea {
+    padding: 10px;
+    color: #083452;
+  }
+
+  .fm-form em {
+    color: #F00 !important;
+    font-weight: bold;
+    font-style: normal;
+  }
+  /* Default plugin styles end */
+
+  form {
+    ul {
+      padding: 15px;
+    }
+
+    .submit {
+      &:extend(.btn);
+      color: @color-white;
+      padding: 15px;
+      font-size: 18px;
+      float: none;
+      margin: 0 15px;
+    }
+    label {
+      font-size: 18px;
+      color: @color-white;
+    }
+  }
+}
+
+.careers {
+  background: @color-white;
+
+  .full-width {
+    width: 100% !important;
+    img {
+      width: 100% !important;
+    }
+  }
+  .container {
+    margin: 0 auto;
+  }
+
+  div.caption {
+    display: block;
+    padding-top: 30px;
+    h2 {
+      color: @color-primary-background;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.9;
+      color: @color-grey;
+    }
+  }
+
+  .careers-image {
+    padding: 0;
+    img {
+      width: 100%;
+    }
+  }
+
+  .flex-next {
+    width: 250px;
+  }
+}
+
+.blogs {
+  background: @color-dark-grey;
+  margin-bottom: 0;
+  .btn-readmore {
+    width: 100%;
+    margin: 15px 0 0;
+    padding: 15px;
+    border-radius: 0px;
+    border: none !important;
+    text-transform: uppercase;
+    display: block;
+    background: @color-primary-background;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      border: none !important;
+      background: darken(@color-primary-background, 5%);
+    }
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+
+  div.caption {
+    background: @color-white;
+    padding: 15px;
+
+    .title {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .desc {
+      color: @color-grey;
+      min-height: 160px;
+      height: auto;
+      padding: 15px 20px;
+      margin: 0;
+    }
+
+    p {
+      // Editor inserts p tags automatically and we don't need the margin.
+      margin: 0;
+    }
+
+    h3 {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+
+    small {
+      font-size: 12px;
+      padding: 0;
+      margin: 0;
+    }
+
+    &:hover {
+      .title {
+        background: @color-primary-background;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.brands {
+  .meet-the-team;
+  .box {
+    img {
+      position: relative;
+      bottom: 20px;
+      border-radius: 0;
+      &:hover {
+        border-radius: 0;
+      }
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.7);
+      img {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.videobg {
+  background: url('../images/mactimeline_bg.png');
+  display: block;
+  height: 400px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 4.5% 5% 5%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+
+  .responsive-video {
+    padding-bottom: 51.25%;
+  }
+}
+
+.videobg_trans {
+  background: url('../images/mactimeline_bg_white.png');
+  display: block;
+  height: 440px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 4.5% 5% 5%;
+  background-repeat: no-repeat !important;
+  background-position: top center;
+  background-size: 100% !important;
+
+  .responsive-video {
+    padding-bottom: 51.25%;
+  }
+}
+
+// Portfolio detail pages
+.page-template-template-brands-php, .page-template-template-investor-relations-php, .single-portfolio {
+  .featured-logo {
+    position: relative;
+
+    img {
+      width: 450px;
+      padding: 15px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }
+
+  .map {
+    background: none !important;
+  }
+
+  .page-test {
+    background: #1E232F !important;
+  }
+
+  .navbar-default {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  main {
+    background: rgba(245, 245, 245, 0.9);
+    padding: 20px;
+
+    p, a {
+      color: #211F32 !important;
+    }
+
+    .entry-content {
+      font-size: 15px;
+      line-height: 1.6;
+      p {
+        padding: 15px 0;
+      }
+    }
+  }
+
+  .brand-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
+
+.vc_row {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.graph-responsive .embed-responsive.embed-responsive-16by9 {
+  padding-bottom: 90.25%;
+}
+
+.arr {
+  vertical-align: middle;
+  line-height: 70px;
+  height: 70px;
+  text-transform: uppercase;
+}
+
+.arrRight {
+  display: block;
+  background-image: url(../images/arrows/arrRight.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-right: 10%;
+  height: 70px;
+  line-height: 70px;
+  text-align: right;
+}
+
+.arrLeft {
+  display: block;
+  background-image: url(../images/arrows/arrLeft.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 5%;
+  height: 70px;
+  line-height: 70px;
+  text-align: left;
+}
+// Everything below here needs to be added when the signal is given
+// Because there is a risk of being sentenced to death otherwise
+/*
+body {
+  background: url(http://www.fawazalhokairfashion.com/wp-content/uploads/2015/06/alhokair-tick.png);
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-attachment: fixed;
+}
+#wrapper-main {
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+body.home {
+  background: none;
+}
+body.splash_screen {
+  overflow: hidden;
+  .splash_container {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 9999;
+    text-align: center;
+    .helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    img {
+      vertical-align: middle;
+      max-width: 890px;
+      width: 100%;
+      margin: auto;
+    }
+  }
+}
+*/
