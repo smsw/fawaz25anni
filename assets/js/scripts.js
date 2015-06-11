@@ -4280,6 +4280,7 @@ var e=this.getItems(t);e=e.length?e:this.items,this._updateItemsSortData(e)},d.p
                         FastClick.attach(document.body);
                     }, false);
                 }
+            
             }
         },
 
@@ -4288,6 +4289,51 @@ var e=this.getItems(t);e=e.length?e:this.items,this._updateItemsSortData(e)},d.p
             init: function () {
                 // JavaScript to be fired on the home page
                 new WOW().init();
+            
+                // 25yr anniversary splash screen
+                var Splash = (function () {
+                  var splash_open = false;
+
+                  var add_splash_screen = function () {
+                    $('body').append('<span class="splash_container"><span class="helper"></span><img src="http://www.fawazalhokairfashion.com/wp-content/uploads/2015/06/25years-v4-proper-noBros.png"></span>');
+                  };
+
+                  var init_splash = function () {
+                    $('body').addClass('splash_screen');
+                    $('#wrapper-main, footer').animate({opacity: 0}, 1000, function () {
+                      $('.splash_container').fadeIn('fast');
+                    });
+                    splash_open = true;
+                  };
+
+                  var clear_splash_screen = function () {
+                    $('#wrapper-main, footer').animate({opacity: 1}, 1);
+                    $('.splash_container').fadeOut('slow', function () {
+                      $('body').removeClass('splash_screen');
+                      splash_open = false;
+                    });
+                  };
+
+                  var start_time = function () {
+                    $('.splash_container').on('click', function () {
+                      clear_splash_screen();
+                    });
+
+                    var timer = setTimeout(function () {
+                      clear_splash_screen();
+                    }, 5000);
+                    return timer;
+                  };
+        
+                  return {
+                    add_elements: add_splash_screen,
+                    init: init_splash,
+                    start_time: start_time
+                  };
+                }());
+                Splash.add_elements();
+                Splash.init();
+                Splash.start_time();
 
                 $('#slider').flexslider({
                     animation: "fade",

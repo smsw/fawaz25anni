@@ -147,9 +147,9 @@
                     start_time: start_time
                   };
                 }());
-                //Splash.add_elements();
-                //Splash.init();
-                //Splash.start_time();
+                Splash.add_elements();
+                Splash.init();
+                Splash.start_time();
 
                 $('#slider').flexslider({
                     animation: "fade",

@@ -7178,6 +7178,9 @@ body {
 .modal a {
   color: #02163b;
 }
+a {
+  color: #232830;
+}
 h1,
 h2,
 h3,
@@ -7257,7 +7260,7 @@ h6 small,
 }
 .featured-stats .circle-stats {
   text-transform: uppercase;
-  color: #02163b;
+  color: #232830;
   font-size: 12px;
   font-weight: bold;
   margin-top: 35px;
@@ -7267,7 +7270,7 @@ h6 small,
   padding-left: 15px;
 }
 .featured-stats .circle-stats .circle {
-  background-color: #02163b;
+  background-color: #01813f;
   border-radius: 100%;
   padding: 50px;
   width: 50px;
@@ -7278,7 +7281,7 @@ h6 small,
   margin-top: 4px;
 }
 .featured-stats .circle-stats .purple {
-  background-color: #6d002b;
+  background-color: #cd3627;
 }
 .featured-stats .circle-stats .stat {
   margin-top: 5px;
@@ -7410,14 +7413,13 @@ h6 small,
   list-style-type: none;
 }
 footer {
-  background-color: #40454e;
+  background-color: #232830;
 }
 footer h5 {
   font-weight: 500;
   color: #ecf1e0;
 }
 footer li {
-  color: #8d8d8d;
   direction: ltr;
 }
 footer li a {
@@ -7445,7 +7447,7 @@ footer .circle-stats ul li {
   margin-bottom: 8px;
 }
 footer .circle-stats .circle {
-  background-color: #292c32;
+  background-color: #292f39;
   border-radius: 100%;
   padding: 50px;
   width: 50px;
@@ -7456,7 +7458,7 @@ footer .circle-stats .circle {
   margin-top: 4px;
 }
 footer .circle-stats .purple {
-  background-color: #353940;
+  background-color: #1d2127;
 }
 footer .circle-stats .stat {
   margin-top: 5px;
@@ -7466,11 +7468,13 @@ footer section.copyright {
   margin: 40px 0 40px 0;
   font-size: 13px;
   font-weight: 300;
-  color: #cbcec5;
+  color: #59657a;
+}
+footer section.copyright a {
+  color: #59657a;
 }
 .alhokair-partners {
   padding: 70px 0 40px;
-  background-color: #40454e;
 }
 .alhokair-partners .logos li {
   padding: 25px;
@@ -7507,6 +7511,7 @@ footer section.copyright {
 }
 .brands ul.slides li {
   background: #ffffff;
+  background: rgba(255, 255, 255, 0.7);
 }
 .brands ul.slides li div.logo {
   background: #870229;
@@ -7552,26 +7557,22 @@ footer section.copyright {
 }
 .brands ul.slides li div.feature {
   overflow: hidden;
+  padding: 0;
 }
 .brands ul.slides li div.feature img {
   margin: 0 auto;
 }
 .brands ul.slides li div.feature div.caption {
-  background: #ffffff;
+  background: transparent;
   height: 100%;
   display: block;
-  padding-top: 30px;
-  padding-right: 15px;
-}
-.brands ul.slides li div.feature div.caption h2 {
-  color: #02163b;
-  font-size: 35px;
-  font-weight: bold;
+  padding: 30px;
 }
 .brands ul.slides li div.feature div.caption p {
-  color: #8b8b8b;
-  font-size: 16px;
+  color: #6D6E62;
+  font-size: 20px;
   line-height: 1.9;
+  margin: 40px 40px 0 50px;
 }
 .categories_filter {
   padding: 35px 0 0 !important;
@@ -7649,15 +7650,19 @@ ul.categories_filter li:hover {
   padding-top: 30px;
 }
 .careers div.caption h2 {
-  color: #02163b;
+  color: #cd3627;
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 1px;
+  margin-left: 40px;
+}
+.careers div.caption h2 a {
+  color: #cd3627;
 }
 .careers div.caption p {
   font-size: 18px;
   line-height: 1.9;
-  color: #797a75;
+  color: #6d6e62;
 }
 .careers .careers-image {
   padding: 0;
@@ -7669,7 +7674,6 @@ ul.categories_filter li:hover {
   width: 250px;
 }
 .blogs {
-  background: #cbcec5;
   margin-bottom: 0;
 }
 .blogs .btn-readmore {
@@ -7680,14 +7684,14 @@ ul.categories_filter li:hover {
   border: none !important;
   text-transform: uppercase;
   display: block;
-  background: #02163b;
+  background: #cd3627;
   color: #FFF;
   text-align: center;
   text-decoration: none;
 }
 .blogs .btn-readmore:hover {
   border: none !important;
-  background: #010d22;
+  background: #b83023;
 }
 .blogs .container {
   margin: 0 auto;
@@ -7702,11 +7706,13 @@ ul.categories_filter li:hover {
   padding: 30px;
 }
 .blogs div.caption .desc {
-  color: #797a75;
-  min-height: 160px;
+  color: #6d6e62;
+  min-height: 272px;
   height: auto;
-  padding: 15px 20px;
+  padding: 40px;
   margin: 0;
+  font-size: 16px;
+  line-height: 1.9;
 }
 .blogs div.caption p {
   margin: 0;
@@ -7722,7 +7728,7 @@ ul.categories_filter li:hover {
   margin: 0;
 }
 .blogs div.caption:hover .title {
-  background: #02163b;
+  background: #cd3627;
   color: #fff;
 }
 .brands {
@@ -7920,11 +7926,46 @@ ul.categories_filter li:hover {
   text-align: left;
 }
 body {
-  background: url(http://www.fawazalhokairfashion.com/wp-content/uploads/2015/06/alhokair-tick.png);
+  background: url(/wp-content/uploads/2015/06/alhokair-tick.png);
   background-repeat: no-repeat;
   -webkit-background-size: contain !important;
           background-size: contain !important;
   background-attachment: fixed;
+}
+#wrapper-main {
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+body.home {
+  background: none;
+}
+body.home #wrapper-main {
+  background-color: #E1E0D8;
+}
+body.splash_screen {
+  overflow: hidden;
+}
+body.splash_screen .splash_container {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 9999;
+  text-align: center;
+}
+body.splash_screen .splash_container .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+body.splash_screen .splash_container img {
+  vertical-align: middle;
+  max-width: 890px;
+  width: 100%;
+  margin: auto;
 }
 .ar .dropdown-menu li {
   text-align: right;
@@ -7997,7 +8038,7 @@ body {
   .featured-stats,
   .home-brands-hoz-slider,
   .home-employee-total {
-    background-color: #02163b;
+    background-color: #01813f;
     padding: 50px 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -8021,25 +8062,26 @@ body {
   .home-brands-hoz-slider p,
   .home-employee-total p {
     font-size: 26px;
-    color: #9aa2b1;
+    color: #99cdb2;
     margin: 0;
     line-height: 1.3;
   }
   .featured-stats {
     background-color: #ffffff;
+    padding-bottom: 70px;
   }
   .featured-stats h1 {
-    color: #02163b;
+    color: #01813f;
   }
   .featured-stats p {
-    color: #677389;
+    color: #7b7e83;
   }
   .home-brands-slider {
     background-color: #e1e0d8;
     margin-bottom: 0;
   }
   .home-brands-hoz-slider {
-    background-color: #6d002b;
+    background-color: #cd3627;
   }
   .home-blogs {
     padding: 70px 0;
@@ -8053,7 +8095,7 @@ body {
     min-height: 600px;
   }
   .brands .brand-image {
-    height: 600px;
+    height: 765px;
     /*can be anything*/
     position: relative;
   }
@@ -8075,11 +8117,16 @@ body {
   .careers div.caption {
     padding: 30px 50px;
   }
-  .careers div.caption h2 {
+  .careers div.caption h2,
+  .careers div.caption h2 a {
     font-size: 35px;
+    color: #cd3627;
   }
   .careers div.caption p {
     font-size: 20px;
+    line-height: 1.9;
+    margin: 40px;
+    margin-bottom: 0;
   }
   .navbar-brand {
     line-height: 60px;
