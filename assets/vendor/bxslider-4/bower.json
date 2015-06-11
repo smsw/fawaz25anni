@@ -1,0 +1,26 @@
+{
+  "name": "bxslider-4",
+  "version": "4.2.0",
+  "homepage": "http://bxslider.com",
+  "license": "MIT",
+  "main": [
+    "dist/jquery.bxslider.js",
+    "dist/jquery.bxslider.css",
+    "dist/images/bx_loader.gif",
+    "dist/images/controls.png"
+  ],
+  "keywords": [
+    "bxslider",
+    "javascript",
+    "jquery",
+    "library"
+  ],
+  "ignore": [
+    "src/**/*.*",
+    "docs/**/.*",
+    "*.md"
+  ],
+  "dependencies": {
+    "jquery": ">=1.6"
+  }
+}

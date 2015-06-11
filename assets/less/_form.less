@@ -1,0 +1,61 @@
+// Form style overrides for Form Manager plugin
+
+.fm-form input, .fm-form textarea {
+  padding: 10px;
+  color: #666;
+}
+
+// Plugin forms not being responsive. :/
+
+.fm-form input, .fm-form textarea {
+  max-width: 100%;
+}
+
+.fm-form .submit {
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none !important;
+  padding: 9px 12px;
+  font-size: 100%;
+  line-height: 20px;
+  border: 2px solid #333;
+  border-radius: 4px;
+
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+  &:hover, &:focus, &:active {
+    background: transparent;
+    padding: 9px 12px;
+    font-size: 100%;
+    line-height: 20px;
+    border: 2px solid @brand-primary;
+    border-radius: 4px;
+    color: @brand-primary;
+  }
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  border-top: none;
+}
+
+form ul {
+  padding: 0;
+}
+
+form .submit {
+  float: left !important;
+}
+
+.submit {
+  border: none;
+
+  &:hover {
+    border: none;
+  }
+}
+
+
