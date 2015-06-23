@@ -25,6 +25,10 @@ $roots_includes = array(
   'lib/background-custom-fields.php',
 );
 
+/* Fix for geolocation & wordpress - https://wordpress.org/support/topic/version-422-wp-emoji-releaseminjs-error */
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
 foreach ($roots_includes as $file) {
   if (!$filepath = locate_template($file)) {
     trigger_error(sprintf(__('Error locating %s for inclusion', 'roots'), $file), E_USER_ERROR);
