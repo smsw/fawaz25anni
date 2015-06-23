@@ -7317,7 +7317,6 @@ h6 small,
 .meet-the-team .box {
   background: transparent;
   background: rgba(255, 255, 255, 0.03);
-  margin-bottom: 25%;
 }
 .meet-the-team .box .team-image img {
   margin: 10px auto;
@@ -7755,7 +7754,6 @@ ul.categories_filter li:hover {
 .brands .box {
   background: transparent;
   background: rgba(255, 255, 255, 0.03);
-  margin-bottom: 25%;
 }
 .brands .box .team-image img {
   margin: 10px auto;
