@@ -37,8 +37,8 @@
       <?php elseif($pageBgOriginal != ''): ?>
         background-image:url('<?php echo $pageBgOriginal; ?>');
         background-attachment: fixed;
-      <?php endif;?>
         background-size: contain !important;
+      <?php endif;?>
       <?php if($pageBgAttach == 'fixed'): ?>
         background-attachment: fixed;
       <?php endif; ?>">
