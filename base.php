@@ -29,7 +29,7 @@
 	        echo body_class();
         }
     ?>
-    style="<?php if($pageBrandBg):?>background-image:url('<?php echo $pageBrandBg['url']; ?>');background-attachment: fixed;<?php elseif($pageBgOriginal != ''):?>background-image:url('<?php echo $pageBgOriginal; ?>');background-attachment: fixed;<?php endif;?>background-size: cover;<?php if($pageBgAttach == 'fixed'):?>background-attachment: fixed;<?php endif; ?>">
+    style="<?php if($pageBrandBg):?>background-image:url('<?php echo $pageBrandBg['url']; ?>');background-attachment: fixed;<?php elseif($pageBgOriginal != ''):?>background-image:url('<?php echo $pageBgOriginal; ?>');background-attachment: fixed;<?php endif;?>background-size: cover !important;<?php if($pageBgAttach == 'fixed'):?>background-attachment: fixed;<?php endif; ?>">
 
   <!--[if lt IE 8]>
     <div class="alert alert-warning">
